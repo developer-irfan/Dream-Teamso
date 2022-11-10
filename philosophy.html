@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="input.css" />
+    <title>Dream Team with Tailwind</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-mainFont">
+    <!-- HEADER START HERE -->
+    <header
+      class="bg-headerBg bg-no-repeat bg-cover h-[45vh] sm:px-4 md:h-[50vh] xl:h-[60vh]"
+    >
+      <nav
+        class="flex items-center justify-between h-8 px-8 py-12 md:px-12 xl:px-40 xl:pt-16 min-w-[70vw]"
+      >
+        <div class="logo flex items-center">
+          <img src="./assets/logo.svg" alt="" srcset="" />
+          <h2
+            class="text-xl px-3 text-white font-extrabold font-logoText tracking-[3px]"
+          >
+            DREAMTEAM
+          </h2>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-20">
+          <ul class="flex space-x-12 text-white self-center">
+            <a class="decoration-0" href="/"
+              ><li class="hover:text-red-500">HOME</li></a
+            >
+            <a class="decoration-0" href="/Kata.html"
+              ><li class="hover:text-red-500">KATA</li></a
+            >
+            <a class="decoration-0" href="/about.html"
+              ><li class="hover:text-red-500">ABOUT</li></a
+            >
+            <a class="decoration-0" href="/philosophy.html"
+              ><li class="hover:text-red-500">PHILOSOPHY</li>
+            </a>
+          </ul>
+          <button
+            class="text-white bg-transparent px-8 py-2 font-semibold text-lg my-2 border-2 border-green-500 hover:bg-[#3BD39D]"
+          >
+            GET STARTED
+          </button>
+        </div>
+
+        <div class="menuicon lg:hidden">
+          <img src="./assets/menuicon.svg" alt="" />
+        </div>
+      </nav>
+      <!-- NAVBAR ENDED -->
+
+      <!-- MAIN HEADER AREA -->
+      <div class="headermain text-white px-6 p-4 md:px-12 xl:px-40">
+        <h1
+          class="w-[300px] leading-[40px] py-2 md:w-[350px] lg:w-[580px] lg:leading-[60px] lg-text[60px] text-[35px] font-bold sm:w-[350px] md:text-[50px] md:leading-[50px] xl:pt-7"
+        >
+          Philosophy
+        </h1>
+        <div
+          class="steps bg-[#0E2333] relative top-8 rounded-xl mx-w-[300px] h-[40vh] mx-auto shadow-2xl xsm:w-[300px] sm:w-[270px] lg:relative lg:left-[300px] xl:left-[350px]"
+        >
+          <ul
+            class="p-10 text-[#C53233] text-[20px] space-y-5 font-semibold pt-16"
+          >
+            <div class="flex items-center space-x-5">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+              <li>Introduction</li>
+            </div>
+            <div class="flex items-center space-x-5">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+              <li>Moving Fast</li>
+            </div>
+            <div class="flex items-center space-x-5">
+              <div class="w-2 h-2 bg-white rounded-full"></div>
+              <li>Staying Lean</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN START HERE -->
+
+    <main>
+      <!-- introduction start here -->
+      <div
+        class="intro sm:px-8 bg-philosophyBg px-6 pb-5 pt-[250px] md:px-12 lg:pl-24 xl:px-48 lg:flex lg:items-center lg:justify-between lg:pr-[5px]"
+      >
+        <div class="lg:w-[430px] xl:w-[500px]">
+          <h2
+            class="text-[26px] pt-7 pb-3 font-bold md:text-[42px] lg:text-[60px] lg:font-extrabold"
+          >
+            Introduction
+          </h2>
+          <p class="text-[18px] tracking-tight py-4 text-justify">
+            At DreamTeam we believe there’s a lot of encumbered innovation
+            pent-up in tech organizations. We’re on a mission to unleash it.
+          </p>
+          <p class="text-[18px] tracking-tight py-4 text-justify">
+            Here are our ever-evolving learnings for organizations to move fast
+            – more shots on goal – and stay lean: more shots per person – at any
+            scale. There’s a lot of fluff and snake oil out there on ways teams
+            can be more effective. We’ve found these lessons are repeatedly the
+            most impactful, based on years of studying, partnering with, or
+            working at companies like Shopify, Snap, Amazon, & Gusto.
+          </p>
+        </div>
+        <img
+          src="https://cdn.sanity.io/images/9kuf28vl/production/e8a92d492a3af37a0f87e1f12b734f674b553c49-451x451.svg"
+          alt=""
+          class="py-5 mx-auto lg:w-[350px] lg:pt-[100px]"
+        />
+      </div>
+
+      <!-- Agile dead section -->
+      <div class="intro px-6 py-6 sm:px-10 md:px-12 lg:px-28 xl:px-48">
+        <h2
+          class="text-[26px] pt-7 pb-3 font-bold md:text-[28px] lg:text-[30px]"
+        >
+          Agile Is Dead! Long Live Agile? 🤷
+        </h2>
+        <p class="text-[18px] tracking-tight py-4 text-justify">
+          In a lot of ways Agile has really jumped the shark. Don’t take our
+          word for it though,
+          <a href="" class="text-[17px] text-red-500 text-justify">
+            ask one of its creators, </a
+          >The
+          <a href="" class="text-[17px] text-red-500 text-justify">
+            Agile Manifesto
+          </a>
+          core value of “Individuals and Interactions over Processes and Tools”
+          ran right into the SaaS-plosion we’re living in today. The rise of
+          task management masquerading as project management really did a number
+          on “Responding to Change over Following a Plan.” And then came the
+          frameworks. If you ask Google, there are more than 50 known Agile
+          Frameworks (SCRUM, KanBan, etc.), not to mention the new scaling
+          frameworks (SAFe, Scrum@Scale etc). We think it's high time to get
+          back to first principles – and that is what we advocate for here in
+          our anti-framework for Getting $#*! Done at Scale.
+        </p>
+
+        <h2
+          class="text-[24px] pt-7 pb-3 font-bold md:text-[28px] lg:text-[30px]"
+        >
+          It’s About the Projects and People
+        </h2>
+        <p class="text-[18px] tracking-tight py-4 text-justify">
+          If we put the frameworks, goal methodologies, and task management
+          tools aside – what are we left with? At the core, we do projects. And
+          they’re done by a team of people. We have found that stripping away
+          the jargon and process, and focusing on getting really good at the
+          fundamentals, goes a long way toward improving productivity. In this
+          case, that means helping people get really good at executing projects.
+          In fact, that’s why we named our first product KATA. Japanese for
+          “form,” KATA is commonly used in martial arts to refer to practicing
+          fundamentals to achieve overall mastery. 👌
+        </p>
+      </div>
+      <!-- Agile section end here -->
+
+      <!-- moving fast section start here -->
+      <div class="movingfast bg-rightBets">
+        <div
+          class="intro px-6 py-6 sm:px-10 md:px-12 lg:px-16 xl:px-48 text-white"
+        >
+          <div class="lg:w-[500px]">
+            <h2
+              class="text-[26px] pt-7 pb-3 font-bold sm:text-[30px] md:text-[40px] md:font-extrabold lg:text-[50px]"
+            >
+              Moving Fast
+            </h2>
+            <p class="text-[18px] tracking-tight py-4 text-justify xl:w-[55vw]">
+              Moving fast means not wasting effort, which allows for more shots
+              on goal. Moving fast at scale means ensuring large groups of
+              people are spending their effort on the highest value items – to
+              do work that matters – in concert with one another, in complex
+              systems. You don’t just need raw speed. You need velocity: speed
+              AND direction. Otherwise you run the risk of going really quickly
+              in the wrong direction(s) and ending up in the wrong place. This
+              is where projects come in.
+            </p>
+          </div>
+          <div class="lg:flex lg:items-center">
+            <div class="order-last">
+              <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+                We’re Playing Poker, Not Chess
+              </h2>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Chess is a beautiful game of decision making and strategy, but
+                it’s also one of clear rules and complete information. You can
+                see the entire board all of the time. If you are a skilled
+                player, there is little betting in chess. Victory and skill are
+                closely correlated.
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                As nice as that might sound, real life is never that
+                straightforward. As Annie Duke states in her popular book,
+                <a href="" class="text-[17px] text-red-500 text-justify">
+                  Thinking in Bets: Making Smarter Decisions When You Don't Have
+                  All the Facts
+                </a>
+              </p>
+
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                , “Chess, for all its strategic complexity, isn’t a great model
+                for decision-making in life, where most of our decisions involve
+                hidden information and a much greater influence of luck.”
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Environments shift, information is incomplete, and there is no
+                perfect way to play. Every decision becomes a bet. And projects
+                are the bets organizations make. How we decide to apply our
+                finite resources and people.
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                When reframed as bets, you suddenly realize that projects can’t
+                be approached as a fixed set of things to do, aka tasks, to
+                achieve a known outcome. This is especially true in the case of
+                software development. Instead, projects should be viewed as
+                establishing a bet on a desired outcome, with recognition that
+                you are in an ever-changing environment with incomplete
+                information. Acknowledging this upfront lets the team see
+                shortcuts and optimizations they’d otherwise miss in blind
+                pursuit of task completion.
+              </p>
+            </div>
+            <img
+              src="https://dreamteamos.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F9kuf28vl%2Fproduction%2Fda3b7ae90fc54c9d37bbc2a38d6d80aa7bb175fb-576x585.png&w=1200&q=75"
+              alt=""
+              class="py-5 lg:h-[450px]"
+            />
+          </div>
+
+          <div class="lg:flex lg:items-center lg:justify-between">
+            <div class="lg:w-[450px]">
+              <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+                Focus on Outcomes, Not Outputs & Dates
+              </h2>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                The popularity of task management tools makes it easy to mistake
+                speed for velocity. Look at all these tickets we are closing!
+                But are we moving the needle on our business objectives? Are we
+                having an impact for our customers?
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Focusing a project on achieving an outcome, rather than getting
+                a bunch of tasks done, eliminates wasted effort. It gives your
+                team the guidance, and the autonomy, they need to decide if a
+                task is actually worth doing.
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                When you focus on achieving an outcome, rather than meeting a
+                (often poorly estimated) ship date, and pair it with thinking in
+                bets, you are in a better position to assess tradeoffs and
+                potential return on effort, or ROE. You can then match your
+                appetite for investment with the potential outcomes, and place
+                your bets (aka projects) accordingly.
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                This is powerful. Not only will you save wasted effort and find
+                shortcuts along your way, but it lets you say “no” to more
+                projects upfront, avoiding even more wasted effort!
+              </p>
+            </div>
+            <img
+              src="https://dreamteamos.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F9kuf28vl%2Fproduction%2F381080772591dfc6201ba360f70287c561b7058d-418x389.png&w=1080&q=75"
+              alt=""
+              class="py-8 lg:h-[400px]"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- moving fast section end here -->
+
+      <!-- ROE not ROI -->
+      <div
+        class="roenotroi bg-philosophyBg px-6 py-8 sm:px-10 md:px-12 lg:px-16 xl:px-48"
+      >
+        <div class="lg:flex lg:justify-between">
+          <img
+            src="https://cdn.sanity.io/images/9kuf28vl/production/b22a72c04d7783161fef5287ae4f01a7e01052e6-501x262.svg"
+            alt=""
+            class="py-5 mx-auto lg:w-[400px]"
+          />
+          <div class="lg:w-[400px]">
+            <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+              ROE Not ROI
+            </h2>
+            <p
+              class="text-[18px] tracking-tight py-4 text-gray-700 text-justify"
+            >
+              It's a subtle but important mental shift. ROI is a financial term.
+              But more often than not, we aren’t making financial investments
+              with projects. Instead, we’re allocating people’s time and energy,
+              which means we’re investing effort. So, Return on Effort. Why does
+              this distinction matter? Well, the math is different. Sure, time
+              is money and all that. But people are not resources. When you
+              invest $100 and want to double your investment you invest $100
+              more. Asking people to work twice as hard yields variable results.
+              You may get more or less than twice the effort depending on how
+              you ask! And doubling the people, well, projects
+              <a href="" class="text-[17px] text-red-500 text-justify">
+                don't work like that
+              </a>
+              . If you remember that we are making investment decisions not with
+              algebra, but multivariable calculus, it will go a long way into
+              better upfront decision making and appetite assessment.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:flex lg:items-center lg:justify-between">
+          <div class="lg:w-[40vw] xl:w-[430px]">
+            <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+              But Still Dates (Milestones)
+            </h2>
+            <p
+              class="text-[18px] tracking-tight py-4 text-gray-700 text-justify"
+            >
+              <a href="" class="text-[17px] text-red-500 text-justify">
+                Parkinson's Law
+              </a>
+              tells us projects expand to fill the time they’re given. So
+              projects MUST have a target ship date, right? Otherwise they go on
+              forever?
+            </p>
+            <p
+              class="text-[18px] tracking-tight py-4 text-gray-700 text-justify"
+            >
+              But we all recognize that projects evolve as they go. As we make
+              progress, we gain new information, which alters our course. We
+              rarely know the entire path forward when we start. But, we do know
+              the concrete next step, or milestone, we are working towards.
+              These milestones pull us closer to achieving our overall
+              objectives.
+            </p>
+            <p
+              class="text-[18px] tracking-tight py-4 text-gray-700 text-justify"
+            >
+              Tracking milestones keeps Parkinson’s Law at bay by tracking
+              smaller, higher confidence, interim goals. This lets you subdivide
+              the entropy for lower overall project risk, and have small
+              victories that build confidence and momentum.
+            </p>
+          </div>
+          <div class="lg:w-[40vw] xl:w-[420px]">
+            <p
+              class="text-[18px] tracking-tight py-4 text-gray-700 text-justify"
+            >
+              The best way to write and set milestones is in the language of
+              your project’s end users and what is being achieved or delivered.
+              Not in task management terms “Tax Engine V2” but in project ones
+              “Begin checkout completion rate test with new tax engine”. For
+              product development, use product functionality language. For
+              technical projects, use technical deliverables. This makes it
+              simple for everyone to connect the goals of the project to the
+              progress being made. For example, stating when a new feature will
+              be complete or a target country launched, is more helpful than
+              knowing that the “back-end is complete.”
+            </p>
+            <p
+              class="text-[18px] tracking-tight py-4 text-gray-700 text-justify"
+            >
+              Status updates should then cover progress towards achieving both
+              these milestones, as well as the overall project outcome.
+            </p>
+          </div>
+        </div>
+        <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+          We’re Part of the Broader Team
+        </h2>
+        <p class="text-[18px] tracking-tight text-gray-700 text-justify">
+          It’s easy to fall into the myopic “it’ll be done when it’s done”
+          mentality, especially as an Engineer. While that sentiment certainly
+          carries some weight, other folks need to be in the know so they can
+          successfully complete their own projects. Marketing needs to be ready
+          to tell the customer. Customer Ops needs to be prepared to support the
+          customer. And Sales needs to be equipped to sell the thing you're
+          building. Setting milestones with target dates that are visible to the
+          entire organization is a great way to keep dependent teams informed.
+          Perhaps even more importantly, it builds trust, and increases the odds
+          of your overall project success. Consider this – if users are never
+          told about a new feature, or a new capability is never sold,
+          <a href="" class="text-[17px] text-red-500 text-justify">
+            did it ever really happen?
+          </a>
+          And we know you can’t foresee the future before it happens. Adding an
+          expression of confidence to your updates makes a huge difference!
+        </p>
+      </div>
+
+      <div class="inputmatter">
+        <div class="roenotroi px-6 py-8 sm:px-10 md:px-12 lg:px-16 xl:px-48">
+          <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+            Inputs Matter - Connect Your Strategy
+          </h2>
+          <div class="lg:flex lg:justify-between">
+            <div class="lg:w-[40vw] xl:w-[430px]">
+              <p
+                class="text-[18px] tracking-tight text-gray-700 py-4 text-justify"
+              >
+                It's no secret,
+                <a href="" class="text-[17px] text-red-500 text-justify">
+                  people want to work on things that matter.
+                </a>
+                . The more you can connect your project to why it matters, the
+                more motivated your team will be, and the better decisions they
+                will make. Objectives alone aren’t enough.
+              </p>
+              <p
+                class="text-[18px] tracking-tight text-gray-700 py-4 text-justify"
+              >
+                Consider this example. Suppose you operate a social platform and
+                you want to add games to it. Your overall Objective, in the OKR
+                sense, might be to “build a world class casual gaming platform”
+                for your audience. So your team goes off to build a world class
+                casual gaming platform. One project they define might be to add
+                a portal for game makers to publish games. Sensical.
+              </p>
+              <p
+                class="text-[18px] tracking-tight text-gray-700 py-4 text-justify"
+              >
+                But what if your strategy was to create a limited number of
+                blockbuster games, rather than offering a broad catalog? Your
+                team would be doing a lot of needless work crafting a world
+                class publishing portal when you really just needed a basic
+                platform to host a handful of games. They were missing the why,
+                the intent of the Objective, the strategy.
+              </p>
+            </div>
+            <div class="lg:w-[40vw] xl:w-[420px]">
+              <p
+                class="text-[18px] tracking-tight text-gray-700 py-4 text-justify"
+              >
+                Connecting strategy to execution at the project level ensures
+                alignment on what a successful outcome actually looks like. It
+                exposes implicit assumptions and avoids wasted effort.
+              </p>
+              <p
+                class="text-[18px] text-gray-700 tracking-tight py-4 text-justify"
+              >
+                We’ve seen that a great way to do this is by writing and sharing
+                a Project Brief. A collaborative document to drive alignment and
+                consensus about a project before any effort is spent. In
+                addition to covering what a project is, a Project Brief should
+                also outline the bet it’s undertaking, why it makes sense, and
+                how it relates to the overall strategy. This document should be
+                shared broadly across the project team, not just consumed by
+                leadership and product management.
+              </p>
+            </div>
+          </div>
+
+          <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+            Tap Into Your Team
+          </h2>
+          <p class="text-[18px] tracking-tight text-gray-700 py-4 text-justify">
+            The people on the front line often have the best ideas and can spot
+            opportunities first. Empower a culture where anyone can propose
+            projects and get consensus on them. We find project briefs are a
+            great tool to enable this!
+          </p>
+          <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+            “So What?” Updates
+          </h2>
+          <p class="text-[18px] tracking-tight text-gray-700 py-4 text-justify">
+            Build a culture of action driven updates that stand on their own.
+            Encourage team members and project owners to ask themselves “so
+            what?” when providing check-ins and status updates. If something is
+            on track – what’s working and is there an opportunity to go faster?
+            If something is off track – what is the issue and what is your plan
+            to address it? The more automatic the behavior, the more automatic
+            the continuous improvement.
+          </p>
+        </div>
+      </div>
+      <!-- input matter end -->
+
+      <!-- STATYING LEAN -->
+      <div class="staying lean bg-rightBets bg-no-repeat bg-cover">
+        <div
+          class="intro text-white px-6 py-8 sm:px-10 md:px-12 lg:px-16 xl:px-48"
+        >
+          <h2
+            class="text-[26px] pt-7 pb-3 font-bold sm:text-[30px] md:text-[40px] md:font-extrabold lg:text-[50px]"
+          >
+            Staying Lean
+          </h2>
+          <p class="text-[18px] tracking-tight py-4 text-justify">
+            Being lean means getting more done with the team you already have –
+            more shots per person. Said another way – you are seeking to make
+            each individual as effective as possible. The best way to do this?
+            Make the process of doing the work thoughtless, so all of the
+            thought can go into the work itself!
+          </p>
+          <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+            Centralized Project Directory
+          </h2>
+          <p class="text-[18px] tracking-tight py-4 text-justify">
+            Create a single source of truth for all of the projects being done
+            across the organization. With limited exceptions, this directory
+            should be accessible to everyone – from the interns, to the CEO – so
+            information can flow freely. This requires more than just a project
+            name listed on a spreadsheet. The project directory should clearly
+            communicate why each project is important, how each project is
+            going, and how much effort (people) is being applied. This level of
+            companywide transparency enables everyone to stay tuned in and
+            leadership to more confidently make trade-off decisions.
+          </p>
+
+          <div class="lg:flex lg:items-center lg:justify-between">
+            <div class="lg:w-[40vw] xl:w-[450px]">
+              <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+                Standardize Communication, Not Tools & Processes
+              </h2>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Let your teams select the tools and ceremonies that work best
+                for them. Teams are like people – no two are alike and they
+                change over time. Forcing them into unnatural ceremonies or
+                undesired tools just adds friction – it makes them stop and
+                think. Standardizing communication, on the other hand, enables
+                information to flow freely, while teams are free to work how
+                they choose.
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Have a standard language for talking about projects and a social
+                protocol to actually use it. Beyond tracking milestones, we have
+                found that regularly sharing demos and check-ins from team
+                members, as well as keeping a written decision log, go an
+                incredibly long way to staying in sync, asynchronously.
+              </p>
+            </div>
+
+            <p
+              class="text-[18px] tracking-tight py-4 text-justify lg:w-[40vw] xl:w-[420px]"
+            >
+              Sprint processes are a great example of this. Some teams prefer
+              two-week cycles, others six. Some projects have fixed shipping
+              schedules, such as app store updates, and some are arbitrary
+              dates. Sprints are great at scheduling and coordinating tasks and
+              should be flexible to match the actual work the team is doing. But
+              sprints tell you little about progress. You need to standardize
+              how you talk about progress.
+            </p>
+          </div>
+
+          <div class="lg:flex lg:justify-between">
+            <img
+              src="https://cdn.sanity.io/images/9kuf28vl/production/40a094a31c7254a5a88df1c2de5b26e016a4113d-333x305.svg"
+              alt=""
+              class="py-5"
+            />
+            <div class="lg:w-[40vw]">
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Think of projects like a jazz performance. It may be the same
+                song, but no two performances sound the same. What makes jazz
+                special (and hard!) is its improvisational format, or artistic
+                autonomy. jazz artists riff and jam in real time. This works
+                because in addition to their strong functional skills, each
+                musician knows how to communicate (through active listening)
+                with each other as they play and adapt on the fly to what they
+                are hearing.
+              </p>
+
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Projects are the same way. When we share a common language, and
+                have mechanisms in place to hear each other, we can build on
+                each other's riffs and deliver stellar performances as a group.
+                Usually, it’s just not the performance we originally planned on
+                delivering.
+              </p>
+              <p class="text-[18px] tracking-tight py-4">
+                Keep the autonomy, standardize communication to bring alignment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATYING LEAN -->
+
+      <!-- focus on feedback start -->
+      <div class="feedback">
+        <div class="roenotroi px-6 py-8 sm:px-10 md:px-12 lg:px-16 xl:px-48">
+          <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+            Focus the Feedback, Create Alignment Moments
+          </h2>
+          <p class="text-[19px] tracking-tight text-gray-700 py-5 text-justify">
+            While frequent sharing and feedback should be encouraged, it’s
+            important for team members and stakeholders to understand where and
+            how to best support the team. Dissecting copy on early designs is
+            not productive. Neither is questioning the approach to solving a
+            problem right as it’s about to ship.
+          </p>
+          <p class="text-[19px] tracking-tight text-gray-700 py-5 text-justify">
+            A great way to focus the feedback is to share which phase the
+            project is in. Teammates should then deliver feedback appropriate to
+            the level of project maturity. If the type of feedback and the
+            project phase are misaligned, the project team should feel empowered
+            to push back!
+          </p>
+          <p class="text-[19px] tracking-tight text-gray-700 py-5 text-justify">
+            At the highest levels we find projects follow four phases. And no we
+            aren’t talking about the dreaded waterfall. There will be many
+            <a
+              href=""
+              class="text-[17px] text-red-500 text-justify xl:w-[55vw]"
+            >
+              OODA - like loops
+            </a>
+            in each phase. We are talking about what types of activity are
+            taking place and creating alignment checkpoints before we decide to
+            move further and spend more effort.
+          </p>
+
+          <div class="ml-4">
+            <div class="relative">
+              <div
+                class="before:absolute before:left-[7px] before:top-[1.5rem] before:h-[100%] before:w-[2px] before:bg-blue-500 before:content-['']"
+              >
+                <div
+                  class="before:absolute before:top-[10px] before:h-[1.25rem] before:w-[1.25rem] before:rounded-[9999px] before:border-[5px] before:bg-blue-500"
+                ></div>
+                <p
+                  class="pl-8 pt-2 text-[18px] tracking-tight text-gray-700 py-5 text-justify xl:w-[55vw]"
+                >
+                  Propose – Building consensus and getting buy-in for a project.
+                  Write a brief, explaining the bet and why it's worth taking.
+                </p>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="before:absolute before:left-[7px] before:top-[1.5rem] before:h-[100%] before:w-[2px] before:bg-blue-500 before:content-['']"
+              >
+                <div
+                  class="before:absolute before:top-[10px] before:h-[1.25rem] before:w-[1.25rem] before:rounded-[9999px] before:border-[5px] before:bg-blue-500"
+                ></div>
+                <p
+                  class="pl-8 pt-2 text-[18px] tracking-tight text-gray-700 py-5 text-justify xl:w-[55vw]"
+                >
+                  Propose – Building consensus and getting buy-in for a project.
+                  Write a brief, explaining the bet and why it's worth taking.
+                </p>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="before:absolute before:left-[7px] before:top-[1.5rem] before:h-[100%] before:w-[2px] before:bg-blue-500 before:content-['']"
+              >
+                <div
+                  class="before:absolute before:top-[10px] before:h-[1.25rem] before:w-[1.25rem] before:rounded-[9999px] before:border-[5px] before:bg-blue-500"
+                ></div>
+                <p
+                  class="pl-8 pt-2 text-[18px] tracking-tight text-gray-700 py-5 text-justify xl:w-[55vw]"
+                >
+                  Propose – Building consensus and getting buy-in for a project.
+                  Write a brief, explaining the bet and why it's worth taking.
+                </p>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="before:absolute before:left-[7px] before:top-[1.5rem] before:h-[100%] before:w-[2px] before:bg-blue-500 before:content-['']"
+              >
+                <div
+                  class="before:absolute before:top-[10px] before:h-[1.25rem] before:w-[1.25rem] before:rounded-[9999px] before:border-[5px] before:bg-blue-500"
+                ></div>
+                <p
+                  class="pl-8 pt-2 text-[18px] tracking-tight text-gray-700 py-5 text-justify xl:w-[55vw]"
+                >
+                  Propose – Building consensus and getting buy-in for a project.
+                  Write a brief, explaining the bet and why it's worth taking.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- focus on feedback end -->
+
+      <!-- foster focus -->
+      <div class="fosterfocus bg-rightBets">
+        <div class="intro px-6 py-6 lg:px-24 xl:px-48 text-white">
+          <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+            Foster Focus, Reduce Churn
+          </h2>
+          <div class="lg:flex lg:justify-between">
+            <div class="lg:w-[38vw] xl:w-[360px]">
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                The entire project team should be responsible for achieving a
+                successful project outcome. But each project should have a
+                single-threaded owner responsible for its successful execution.
+                Projects develop their own gravity, and someone needs to hold
+                the world in their head to keep it moving along. It’s difficult
+                to do that when you’re spread across multiple worlds!
+              </p>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                For the rest of the project team, it’s impractical to only ever
+                work on one project at a time. However, the number of
+                simultaneous projects should be limited to as few as possible.
+                This keeps things from falling through the cracks, and it lets
+                the momentum of a project build on itself.
+              </p>
+            </div>
+            <p class="text-[18px] tracking-tight py-4 text-justify lg:w-[38vw]">
+              Leverage project phases to help you think about how team members
+              should be staffed against projects. Team members should never be
+              working on multiple projects in the Execute phase at the same
+              time. For projects of any substance, this is simply too much to
+              tackle at once and puts both projects at risk. However, it’s
+              realistic to work on a project in the Propose phase while you are
+              also actively working on a project in the Execute phase.
+            </p>
+          </div>
+
+          <div class="lg:flex lg:justify-between">
+            <img
+              src="https://cdn.sanity.io/images/9kuf28vl/production/a166e0a11f515159e7aa8978e6bfdfcce04143a3-361x464.svg"
+              alt=""
+              class="py-5 lg:w-[300px]"
+            />
+
+            <div class="lg:w-[40vw]">
+              <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+                Bad News Is Good News
+              </h2>
+              <p class="text-[18px] tracking-tight py-4 text-justify">
+                Bad news should never be punished. If a warning flag is raised,
+                this is instead an opportunity to jump in and help (if needed).
+                Wouldn’t you rather know immediately when a project is going
+                sideways so that the broader team can put their heads together
+                to get it back on track? The alternative is so much worse.
+              </p>
+              <p class="text-[18px] tracking-tight py-5 text-justify">
+                Normalize the fact that not every project is green all the time.
+                A centralized project directory helps to drive awareness and
+                acceptance of this.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:flex lg:justify-between">
+            <img
+              src="https://cdn.sanity.io/images/9kuf28vl/production/aee1e0a5c168757ac7fab7d6700183b87ff22257-411x364.svg"
+              alt=""
+              class="py-5 lg:w-[300px] lg:order-last"
+            />
+
+            <div class="lg:w-[40vw]">
+              <h2 class="text-[24px] pt-7 pb-3 font-bold lg:text-[30px]">
+                Project Retros, Not Sprint Retros
+              </h2>
+              <p class="text-[18px] tracking-tight pb-4 text-justify">
+                Carving out time to look back and reflect is a strong tool for
+                continuous improvement. However, we have found much greater
+                value in reflection at the project level, rather than after each
+                sprint. Sprints simply aren’t long enough to make meaningful
+                observations beyond micro-complaints. And reviewing a sprint is
+                just reviewing our ability to get work done in a specified time
+                period. We miss the bigger picture observations as to whether we
+                were able to problem solve, work cross-functionally, and achieve
+                an outcome in the quickest time possible. There’s much more
+                continuous improvement fruit to pick in the latter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- foster focus end -->
+    </main>
+
+    <!-- MAIN end HERE -->
+
+    <!-- FOOTER START HERE -->
+    <footer class="bg-[#0E2333]">
+      <div class="sm:hidden">
+        <div class="flex flex-col items-center text-center text-white p-6">
+          <div class="logo flex items-center">
+            <img src="./assets/logo.svg" alt="" srcset="" class="w-10" />
+            <h2 class="text-2xl px-3 text-white font-extrabold tracking-wider">
+              DREAMTEAM
+            </h2>
+          </div>
+          <ul class="text-lg space-y-4 pt-8 font-semibold">
+            <li>Product</li>
+            <li>Kata</li>
+            <li>Schedule a demo</li>
+          </ul>
+        </div>
+        <div class="text-white flex p-8 justify-between text-lg">
+          <ul class="space-y-3">
+            <li class="font-extrabold">Resources</li>
+            <li>Help Center</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="font-extrabold">Company</li>
+            <li>About us</li>
+            <li>Philosophy</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- bottom footer for sm devices -->
+      <div class="hidden sm:block p-6 pt-20 md:px-14 lg:flex-row lg:hidden">
+        <div class="logo flex justify-center">
+          <img src="./assets/logo.svg" alt="" srcset="" class="w-10" />
+          <h2 class="text-2xl px-3 text-white font-extrabold tracking-wider">
+            DREAMTEAM
+          </h2>
+        </div>
+        <div class="flex justify-between text-white p-8 text-lg lg:flex-row">
+          <ul class="text-lg space-y-3">
+            <li class="font-extrabold">Product</li>
+            <li>Kata</li>
+            <li>Schedule a demo</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="font-extrabold">Resources</li>
+            <li>Help Center</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="font-extrabold">Company</li>
+            <li>About us</li>
+            <li>Philosophy</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FOOTER FOR LARGE DEVICES -->
+      <div class="hidden p-6 pt-20 md:px-14 lg:flex justify-between text-white">
+        <div class="logo flex justify-center">
+          <img
+            src="./assets/logo.svg"
+            alt=""
+            srcset=""
+            class="w-10 self-start"
+          />
+          <h2 class="text-2xl px-3 text-white font-extrabold tracking-wider">
+            DREAMTEAM
+          </h2>
+        </div>
+        <ul class="text-lg space-y-3">
+          <li class="font-extrabold">Product</li>
+          <li>Kata</li>
+          <li>Schedule a demo</li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="font-extrabold">Resources</li>
+          <li>Help Center</li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="font-extrabold">Company</li>
+          <li>About us</li>
+          <li>Philosophy</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- FOOTER END HRE -->
+  </body>
+</html>

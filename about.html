@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="input.css" />
+    <title>Dream Team with Tailwind</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-mainFont">
+    <!-- HEADER START HERE -->
+    <header
+      class="bg-headerBg bg-no-repeat bg-cover h-[45vh] sm:px-4 md:h-[50vh] xl:h-[60vh]"
+    >
+      <nav
+        class="flex items-center justify-between h-8 px-8 py-12 md:px-12 xl:px-40 xl:pt-16 min-w-[70vw]"
+      >
+        <div class="logo flex items-center">
+          <img src="./assets/logo.svg" alt="" srcset="" />
+          <h2
+            class="text-xl px-3 text-white font-extrabold font-logoText tracking-[3px]"
+          >
+            DREAMTEAM
+          </h2>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-20">
+          <ul class="flex space-x-12 text-white self-center">
+            <a class="decoration-0" href="/"
+              ><li class="hover:text-red-500">HOME</li></a
+            >
+            <a class="decoration-0" href="/Kata.html"
+              ><li class="hover:text-red-500">KATA</li></a
+            >
+            <a class="decoration-0" href="/about.html"
+              ><li class="hover:text-red-500">ABOUT</li></a
+            >
+            <a class="decoration-0" href="philosophy.html"
+              ><li class="hover:text-red-500">PHILOSOPHY</li>
+            </a>
+          </ul>
+          <button
+            class="text-white bg-transparent px-8 py-2 font-semibold text-lg my-2 border-2 border-green-500 hover:bg-[#3BD39D]"
+          >
+            GET STARTED
+          </button>
+        </div>
+
+        <div class="menuicon lg:hidden">
+          <img src="./assets/menuicon.svg" alt="" />
+        </div>
+      </nav>
+      <!-- NAVBAR ENDED -->
+
+      <!-- MAIN HEADER AREA -->
+      <div class="headermain text-white px-6 p-4 md:px-12 xl:px-40">
+        <h1
+          class="w-[300px] leading-[40px] py-2 md:w-[350px] lg:w-[580px] lg:leading-[60px] lg-text[60px] text-[35px] font-extrabold sm:w-[350px] md:text-[50px] md:leading-[50px] xl:pt-7"
+        >
+          Make the right bets, on the right projects.
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- MISSION SECTION START HERE -->
+      <div class="mission px-6 py-5 sm:pr-[200px] lg:px-24 xl:px-48">
+        <h2
+          class="text-[30px] font-extrabold pb-5 md:text-[42px] lg:text-[50px]"
+        >
+          Our mission
+        </h2>
+        <p class="text-[17px] text-justify xl:w-[55vw]">
+          At DreamTeam, we’re on a mission to unleash all that encumbered
+          innovation pent up in tech organizations. We want to help you tap into
+          your team so your people do work that matters and avoid work that
+          doesn’t.
+        </p>
+        <p class="text-[17px] text-justify py-5 xl:w-[55vw]">
+          In fact, one of our core beliefs is that return on effort trumps
+          return on investment when measuring a team’s performance.
+        </p>
+      </div>
+      <!-- MISSION SECTION End HERE -->
+
+      <!-- DREAM TEAM SECTION START HERE -->
+      <div class="bg-headerBg bg-no-repeat bg-cover">
+        <div class="dreamteam px-6 py-5 text-white mt-4 md:px-12 xl:px-40">
+          <h2
+            class="text-[30px] font-extrabold pb-5 md:text-[42px] lg:text-[50px]"
+          >
+            DREAM TEAM
+          </h2>
+          <p class="text-[17px] text-justify italic">
+            "I've been on some pretty fast moving engineering teams at fast
+            moving companies like Snap and Amazon. Time and time again, the
+            bottlenecks and problems all came back to how information flow was
+            broken across the organization.
+          </p>
+          <p class="text-[17px] text-justify py-5 italic">
+            DreamTeam was born from the idea that instead of adding more tools
+            and processes, perhaps the answer was to take it back to first
+            principles. Focus on reflecting how stuff actually gets done. Ignore
+            traditional tools, org charts and process boundaries. If we do that,
+            could we change how information flows and make orgs more effective?
+            And if we could do that at scale, we could change the world for the
+            better!”
+          </p>
+          <h3 class="py-4 font-bold text-lg">Brent, Berkman Founder</h3>
+          <button
+            class="bg-[#3BD39D] px-14 py-3 text-gray-800 font-bold text-lg mb-4 hover:bg-transparent hover:text-white hover:border-2 hover:border-green-500"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+      <!-- DREAM TEAM SECTION End HERE -->
+
+      <!-- INVERSTOR SECTION START -->
+      <div class="inverstor px-8 py-5">
+        <!-- <h2 class="text-[30px] font-extrabold pb-5 text-center">Investor</h2> -->
+        <h2
+          class="text-[30px] font-extrabold pb-5 md:text-[42px] lg:text-[50px] text-center"
+        >
+          Investor
+        </h2>
+        <div class="flex justify-around xl:w-[700px] xl:mx-auto">
+          <img
+            src="https://cdn.sanity.io/images/9kuf28vl/production/a955bf463970ffb6937d0668eec813061feeaf78-61x35.svg"
+            alt=""
+            class="lg:w-[130px]"
+          />
+          <img
+            src="https://cdn.sanity.io/images/9kuf28vl/production/5b39cbe5f578f8170a7b2747c63c86b093a686b9-46x45.svg"
+            alt=""
+            class="lg:w-[130px]"
+          />
+          <img
+            src="https://cdn.sanity.io/images/9kuf28vl/production/0d1fc5f64147a00f812c111e01e4f3c42cefc02a-80x30.svg"
+            alt=""
+            class="lg:w-[130px]"
+          />
+        </div>
+        <p class="text-[20px] text-center py-5 lg:text-[26px]">
+          Advisory team: Executives from Snap, Google, Shopify, PayPal, &
+          Microsoft.
+        </p>
+      </div>
+
+      <!-- INVERSTOR SECTION  START -->
+
+      <!-- FIND US SECTION START HERE -->
+      <div class="bg-findUs bg-no-repeat bg-cover">
+        <div class="dreamteam px-6 py-5 text-white mt-4">
+          <h2
+            class="text-[30px] font-extrabold pb-5 md:text-[42px] lg:text-[50px] text-center"
+          >
+            Find us in
+          </h2>
+          <div
+            class="flex flex-col items-center space-y-4 lg:flex-row lg:items-center xl:w-[800px] xl:mx-auto lg:justify-evenly"
+          >
+            <div>
+              <img
+                src="https://cdn.sanity.io/images/9kuf28vl/production/f057686e499fc03a92a71c9b897981b1ad76eafe-121x135.svg"
+                alt=""
+              />
+              <h2 class="text-[30px] font-extrabold pb-5 text-center">
+                Denvver
+              </h2>
+            </div>
+
+            <div>
+              <img
+                src="https://cdn.sanity.io/images/9kuf28vl/production/f77754a20ad7ecb10fe8e8ac7f01d01bdb6dcb09-125x135.svg"
+                alt=""
+              />
+              <h2 class="text-[30px] font-extrabold pb-5 text-center">
+                Seattle
+              </h2>
+            </div>
+            <div>
+              <img
+                src="https://cdn.sanity.io/images/9kuf28vl/production/8f630a000d9e4c474cd2f679b30f66f3460ddf84-125x116.svg"
+                alt=""
+              />
+              <h2 class="text-[30px] font-extrabold pb-5 text-center">
+                Boulder
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIND US SECTION End HERE -->
+    </main>
+
+    <!-- FOOTER START HERE -->
+    <footer class="bg-[#0E2333]">
+      <div class="sm:hidden">
+        <div class="flex flex-col items-center text-center text-white p-6">
+          <div class="logo flex items-center">
+            <img src="./assets/logo.svg" alt="" srcset="" class="w-10" />
+            <h2 class="text-2xl px-3 text-white font-extrabold tracking-wider">
+              DREAMTEAM
+            </h2>
+          </div>
+          <ul class="text-lg space-y-4 pt-8 font-semibold">
+            <li>Product</li>
+            <li>Kata</li>
+            <li>Schedule a demo</li>
+          </ul>
+        </div>
+        <div class="text-white flex p-8 justify-between text-lg">
+          <ul class="space-y-3">
+            <li class="font-extrabold">Resources</li>
+            <li>Help Center</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="font-extrabold">Company</li>
+            <li>About us</li>
+            <li>Philosophy</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- bottom footer for sm devices -->
+      <div class="hidden sm:block p-6 pt-20 md:px-14 lg:flex-row lg:hidden">
+        <div class="logo flex justify-center">
+          <img src="./assets/logo.svg" alt="" srcset="" class="w-10" />
+          <h2 class="text-2xl px-3 text-white font-extrabold tracking-wider">
+            DREAMTEAM
+          </h2>
+        </div>
+        <div class="flex justify-between text-white p-8 text-lg lg:flex-row">
+          <ul class="text-lg space-y-3">
+            <li class="font-extrabold">Product</li>
+            <li>Kata</li>
+            <li>Schedule a demo</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="font-extrabold">Resources</li>
+            <li>Help Center</li>
+          </ul>
+          <ul class="space-y-3">
+            <li class="font-extrabold">Company</li>
+            <li>About us</li>
+            <li>Philosophy</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FOOTER FOR LARGE DEVICES -->
+      <div class="hidden p-6 pt-20 md:px-14 lg:flex justify-between text-white">
+        <div class="logo flex justify-center">
+          <img
+            src="./assets/logo.svg"
+            alt=""
+            srcset=""
+            class="w-10 self-start"
+          />
+          <h2 class="text-2xl px-3 text-white font-extrabold tracking-wider">
+            DREAMTEAM
+          </h2>
+        </div>
+        <ul class="text-lg space-y-3">
+          <li class="font-extrabold">Product</li>
+          <li>Kata</li>
+          <li>Schedule a demo</li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="font-extrabold">Resources</li>
+          <li>Help Center</li>
+        </ul>
+        <ul class="space-y-3">
+          <li class="font-extrabold">Company</li>
+          <li>About us</li>
+          <li>Philosophy</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- FOOTER END HRE -->
+  </body>
+</html>
